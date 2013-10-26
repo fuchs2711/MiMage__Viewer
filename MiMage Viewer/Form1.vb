@@ -18,8 +18,8 @@
             ')
 
             PictureBox1.ImageLocation = strFileNameAndPath
-            picdir = "D:\Bilder\b"
-            picfile = strFileNameAndPath
+            picdir = System.IO.Path.GetDirectoryName(strFileNameAndPath)
+            picfile = strFileNameAndPath.Replace(System.IO.Path.GetDirectoryName(strFileNameAndPath) & "\", "")
 
             Dim di As New IO.DirectoryInfo(picdir)
             Dim diar1 As IO.FileInfo() = di.GetFiles()
@@ -28,6 +28,8 @@
             For Each dra In diar1
                 ListBox1.Items.Add(dra)
             Next
+
+            Me.Text = picdir & " | " & picfile
 
         End If
     End Sub
@@ -59,5 +61,21 @@
 
     Private Sub FileInfoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FileInfoToolStripMenuItem.Click
         FileInfo.Show()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Try
+            ListBox1.SelectedIndex = ListBox1.SelectedIndex - 1
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Try
+            ListBox1.SelectedIndex = ListBox1.SelectedIndex + 1
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

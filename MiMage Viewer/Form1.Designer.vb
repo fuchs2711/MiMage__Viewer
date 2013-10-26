@@ -29,11 +29,11 @@ Partial Class Form1
         Me.ÖffnenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OrdnerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FileInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BeendenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.FileInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -46,7 +46,7 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.Red
         Me.PictureBox1.Location = New System.Drawing.Point(0, 28)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(646, 386)
+        Me.PictureBox1.Size = New System.Drawing.Size(646, 381)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -74,7 +74,7 @@ Partial Class Form1
         '
         Me.ÖffnenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DateiToolStripMenuItem, Me.OrdnerToolStripMenuItem})
         Me.ÖffnenToolStripMenuItem.Name = "ÖffnenToolStripMenuItem"
-        Me.ÖffnenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ÖffnenToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.ÖffnenToolStripMenuItem.Text = "Öffnen"
         '
         'DateiToolStripMenuItem
@@ -89,16 +89,22 @@ Partial Class Form1
         Me.OrdnerToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
         Me.OrdnerToolStripMenuItem.Text = "Ordner"
         '
+        'FileInfoToolStripMenuItem
+        '
+        Me.FileInfoToolStripMenuItem.Name = "FileInfoToolStripMenuItem"
+        Me.FileInfoToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.FileInfoToolStripMenuItem.Text = "File Info"
+        '
         'BeendenToolStripMenuItem
         '
         Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
-        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.BeendenToolStripMenuItem.Text = "Beenden"
         '
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Button1.Location = New System.Drawing.Point(316, 420)
+        Me.Button1.Location = New System.Drawing.Point(315, 415)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 30)
         Me.Button1.TabIndex = 2
@@ -108,7 +114,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Button2.Location = New System.Drawing.Point(397, 420)
+        Me.Button2.Location = New System.Drawing.Point(396, 415)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 30)
         Me.Button2.TabIndex = 3
@@ -124,12 +130,6 @@ Partial Class Form1
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(120, 381)
         Me.ListBox1.TabIndex = 4
-        '
-        'FileInfoToolStripMenuItem
-        '
-        Me.FileInfoToolStripMenuItem.Name = "FileInfoToolStripMenuItem"
-        Me.FileInfoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.FileInfoToolStripMenuItem.Text = "File Info"
         '
         'Form1
         '
